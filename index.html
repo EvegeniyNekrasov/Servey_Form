@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>ServeyForm</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="header">
+            <h1 class="title">Submit Form</h1>
+            <p class="description">Project form freeCodeCamp</p>
+        </header>
+        <form class="survey-form">
+
+            <!-- Name Label -->
+            <div class="form-group">
+                <label class="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Label -->
+            <div class="form-group">
+                <label class="email-label">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Age Label -->
+            <div class="form-group">
+                <label class="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+
+            <!-- Current Role Label -->
+            <div class="form-group">
+                <p>Current situation</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select Current situation</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Recommendation Label -->
+            <div class="form-group">
+                <p>Would you recommend me to other people?</p>
+                <label><input type="radio" name="user-recommend" value="definitely" class="input-radio">Definitely</label>
+                <label><input type="radio" name="user-recommend" value="maybe" class="input-radio">Maybe</label>
+                <label><input type="radio" name="user-recommend" value="not-sure" class="input-radio">Not sure</label>
+            </div>
+
+             <!-- Futere Label -->
+             <div class="form-group">
+                 <p>What is your future interest?</p>
+                <select name="mostlike" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="chalenges">Chalenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Most like specialization Label -->
+            <div class="form-group">
+                <p>What is your most like specialization?</p>
+               <label><input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Front End Projects</label>
+               <label><input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox">Back End Projects</label>
+               <label><input type="checkbox" name="prefer" value="full-stack-projects" class="input-checkbox">Full Stack Projects</label>
+               <label><input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox">Open Source Community</label>
+               <label><input type="checkbox" name="prefer" value="Forum" class="input-checkbox">Forum</label>
+           </div>
+
+           <!-- Comment Label -->
+            <div class="form-group">
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Leave a comment..."></textarea>
+           </div>
+
+           <!-- Button Label -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+           </div>
+
+        </form>
+    </div>
+</body>
+</html>
